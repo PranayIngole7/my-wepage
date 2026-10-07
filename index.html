@@ -3,196 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranay Ingole - Java Backend Developer</title>
+    <title>Pranay Ingole - Java Backend Developer Resume</title>
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-main: #1f2937;
-            --text-muted: #4b5563;
-            --bg-light: #f9fafb;
-            --border-color: #e5e7eb;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Clean, ATS-Optimized Typography & Simple Linear Layout */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-main);
-            background-color: #f3f4f6;
-            line-height: 1.6;
-            padding: 2rem 1rem;
+            font-family: Arial, Helvetica, sans-serif, -apple-system;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 40px;
         }
 
         .resume-container {
             max-width: 800px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         /* Header Section */
         header {
             text-align: center;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 1.5rem;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 2.25rem;
-            color: var(--text-main);
-            margin-bottom: 0.5rem;
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            letter-spacing: 0.5px;
         }
 
         .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            font-size: 0.95rem;
-            color: var(--text-muted);
+            font-size: 10pt;
+            margin-bottom: 15px;
         }
 
         .contact-info a {
-            color: var(--primary-color);
+            color: #000000;
             text-decoration: none;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Section Styling */
-        section {
-            margin-bottom: 1.75rem;
-        }
-
+        /* Section Headings */
         h2 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1rem;
+            font-size: 12pt;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
         }
 
         p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 0.75rem;
+            margin: 0 0 10px 0;
+            text-align: justify;
         }
 
-        /* Skills Table / List */
-        .skills-list {
-            list-style: none;
+        /* Experience and Project Blocks */
+        .job, .project, .education-block, .cert-block {
+            margin-bottom: 12px;
         }
 
-        .skills-list li {
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-            color: var(--text-muted);
+        .job-header, .project-header, .education-header {
+            font-weight: bold;
+            margin-bottom: 2px;
         }
 
-        .skills-list strong {
-            color: var(--text-main);
-        }
-
-        /* Experience & Projects */
-        .item {
-            margin-bottom: 1.25rem;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-
-        .item-title {
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: var(--text-main);
-        }
-
-        .item-subtitle {
+        .job-subheader, .education-subheader {
             font-style: italic;
-            color: var(--text-muted);
-            font-size: 0.95rem;
+            margin-bottom: 4px;
         }
 
-        .item-date {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-weight: 500;
+        /* Lists */
+        ul {
+            margin: 0 0 10px 0;
+            padding-left: 20px;
         }
 
-        ul.bullet-points {
-            list-style-type: disc;
-            margin-left: 1.25rem;
-            margin-top: 0.35rem;
+        li {
+            margin-bottom: 4px;
         }
 
-        ul.bullet-points li {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 0.35rem;
-        }
-
-        .project-link {
-            font-size: 0.85rem;
-            margin-left: 0.5rem;
-        }
-
-        .project-link a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .project-link a:hover {
-            text-decoration: underline;
-        }
-
-        /* Education Grid */
-        .education-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 600px) {
-            .resume-container {
-                padding: 1.25rem;
-            }
-            .item-header, .education-item {
-                flex-direction: column;
-            }
+        /* Skills section text */
+        .skills-section p {
+            margin-bottom: 6px;
         }
     </style>
 </head>
 <body>
 
     <div class="resume-container">
+        
         <!-- Header -->
         <header>
             <h1>Pranay Ingole</h1>
             <div class="contact-info">
-                <span>Pune, Maharashtra</span>
-                <span>|</span>
-                <a href="mailto:pranayingole1@gmail.com">pranayingole1@gmail.com</a>
-                <span>|</span>
-                <span>7822051743</span>
-                <span>|</span>
-                <a href="https://github.com/PranayIngole7" target="_blank">GitHub</a>
-                <span>|</span>
+                Pune, Maharashtra | 
+                <a href="mailto:pranayingole1@gmail.com">pranayingole1@gmail.com</a> | 
+                7822051743 | 
+                <a href="https://github.com/PranayIngole7" target="_blank">GitHub</a> | 
                 <a href="https://linkedin.com/in/pranayingole1" target="_blank">LinkedIn</a>
             </div>
         </header>
@@ -206,28 +118,24 @@
         </section>
 
         <!-- Technical Skills -->
-        <section>
+        <section class="skills-section">
             <h2>Technical Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Java 21/25, Python</li>
-                <li><strong>Backend:</strong> Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, REST APIs, Microservices Concepts, FastAPI</li>
-                <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, H2</li>
-                <li><strong>Messaging & Caching:</strong> Apache Kafka, Redis</li>
-                <li><strong>DevOps & Tools:</strong> Docker, Kubernetes, AWS, CI/CD, GitHub Actions, Helm, Argo CD, MinIO, Prometheus, Grafana</li>
-                <li><strong>Testing:</strong> JUnit 5, Postman</li>
-            </ul>
+            <p><strong>Languages:</strong> Java 21/25, Python</p>
+            <p><strong>Backend:</strong> Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, REST APIs, Microservices Concepts, FastAPI</p>
+            <p><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, H2</p>
+            <p><strong>Messaging & Caching:</strong> Apache Kafka, Redis</p>
+            <p><strong>DevOps & Tools:</strong> Docker, Kubernetes, AWS, CI/CD, GitHub Actions, Helm, Argo CD, MinIO, Prometheus, Grafana</p>
+            <p><strong>Testing:</strong> JUnit 5, Postman</p>
         </section>
 
         <!-- Professional Experience -->
         <section>
             <h2>Professional Experience</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Software Engineer</span>
-                    <span class="item-date">May 2022 – Oct 2023</span>
-                </div>
-                <div class="item-subtitle">FEV India Pvt. Ltd., Pune</div>
-                <ul class="bullet-points">
+            
+            <div class="job">
+                <div class="job-header">Software Engineer | May 2022 – Oct 2023</div>
+                <div class="job-subheader">FEV India Pvt. Ltd., Pune</div>
+                <ul>
                     <li>Contributed to Java-based software development within the Software Defined Vehicle department.</li>
                     <li>Developed a Bluetooth application using Java for device connectivity and application functionality.</li>
                     <li>Developed a media player application using Java and SQLite, with Git-based development and debugging.</li>
@@ -240,32 +148,26 @@
         <section>
             <h2>Projects</h2>
             
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">PayFlow – Distributed Digital Wallet & Payment Platform <span class="project-link"><a href="https://github.com/PranayIngole7" target="_blank">[GitHub]</a></span></span>
-                </div>
-                <ul class="bullet-points">
+            <div class="project">
+                <div class="job-header">PayFlow – Distributed Digital Wallet & Payment Platform (<a href="https://github.com/PranayIngole7/payflow" target="_blank">GitHub</a>)</div>
+                <ul>
                     <li>Developed a modular-monolith financial platform covering account, wallet, payment, transaction, and ledger domains.</li>
                     <li>Implemented transactional wallet and payment workflows with validation, optimistic locking, idempotency, double-entry ledger accounting and PostgreSQL integration testing.</li>
                     <li>Built REST APIs and automated tests with domain-oriented application boundaries, transaction management and failure-handling workflows.</li>
                 </ul>
             </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">NaadaGangaa – Full-Stack Audio Streaming Platform <span class="project-link"><a href="https://github.com/PranayIngole7" target="_blank">[GitHub]</a></span></span>
-                </div>
-                <ul class="bullet-points">
+            <div class="project">
+                <div class="job-header">NaadaGangaa – Full-Stack Audio Streaming Platform (<a href="https://github.com/PranayIngole7/NaadaGangaa" target="_blank">GitHub</a>)</div>
+                <ul>
                     <li>Built a full-stack audio streaming and album management application using Spring Boot, Java, React, and Vite.</li>
                     <li>Developed REST APIs with Spring Data JPA/Hibernate and implemented authentication, audio streaming, album management, and admin functionality.</li>
                 </ul>
             </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Cloud-Native Thumbnail Pipeline – Cloud-Native Image Processing Platform <span class="project-link"><a href="https://github.com/PranayIngole7" target="_blank">[GitHub]</a></span></span>
-                </div>
-                <ul class="bullet-points">
+            <div class="project">
+                <div class="job-header">Cloud-Native Thumbnail Pipeline – Cloud-Native Image Processing Platform (<a href="https://github.com/PranayIngole7/cloud-native-thumbnail-pipeline" target="_blank">GitHub</a>)</div>
+                <ul>
                     <li>Built a containerized image-processing service using FastAPI, Docker, Kubernetes, MinIO, Pillow, and Knative, implementing thumbnail generation, S3-compatible object storage, health checks, and persistent storage.</li>
                     <li>Implemented CI/CD and GitOps with GitHub Actions and Argo CD, plus observability and security using Prometheus, Grafana, OpenTelemetry, Jaeger, Trivy, Kubernetes security controls, and NetworkPolicy.</li>
                 </ul>
@@ -275,12 +177,9 @@
         <!-- Career Break & Technical Development -->
         <section>
             <h2>Career Break & Technical Development</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Continuous Learning & Upskilling</span>
-                    <span class="item-date">Nov 2023 – Present</span>
-                </div>
-                <p style="margin-top: 0.35rem;">
+            <div class="job">
+                <div class="job-header">Continuous Learning & Upskilling | Nov 2023 – Present</div>
+                <p>
                     Had to take a career break due to personal and family circumstances while continuing professional development through technical certifications, hands-on software projects, and DevOps training in Linux, Docker, Kubernetes, Jenkins, Git, and CI/CD; currently building a portfolio of Java backend applications.
                 </p>
             </div>
@@ -289,41 +188,24 @@
         <!-- Certification -->
         <section>
             <h2>Certification</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Course in DevOps</span>
-                    <span class="item-date">Nov 2025</span>
-                </div>
-                <div class="item-subtitle">Sunbeam CDAC, Pune</div>
+            <div class="cert-block">
+                <div class="job-header">Course in DevOps – Sunbeam CDAC, Pune | Nov 2025</div>
             </div>
         </section>
 
         <!-- Education -->
         <section>
             <h2>Education</h2>
-            <div class="item">
-                <div class="education-item">
-                    <div>
-                        <strong>PG Diploma in Mobile Computing</strong><br>
-                        <span class="item-subtitle">SUNBEAM CDAC, Pune</span>
-                    </div>
-                    <div>
-                        <span class="item-date">Apr 2022 | 66.86%</span>
-                    </div>
-                </div>
+            <div class="education-block">
+                <div class="education-header">PG Diploma in Mobile Computing – SUNBEAM CDAC, Pune</div>
+                <div class="education-subheader">Apr 2022 | Percentage: 66.86%</div>
             </div>
-            <div class="item">
-                <div class="education-item">
-                    <div>
-                        <strong>BE in Computer Science</strong><br>
-                        <span class="item-subtitle">SGB Amravati University</span>
-                    </div>
-                    <div>
-                        <span class="item-date">Nov 2020 | 70%</span>
-                    </div>
-                </div>
+            <div class="education-block">
+                <div class="education-header">BE in Computer Science – SGB Amravati University</div>
+                <div class="education-subheader">Nov 2020 | Percentage: 70%</div>
             </div>
         </section>
+
     </div>
 
 </body>
